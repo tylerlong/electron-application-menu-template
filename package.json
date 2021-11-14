@@ -1,0 +1,19 @@
+{
+  "name": "electron-application-menu-template",
+  "description": "Electron Application Menu Template",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": "github:tylerlong/electron-application-menu-template",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "yarn tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "electron": "^15.3.1",
+    "gts": "^3.1.0",
+    "typescript": "^4.4.4",
+    "yarn-upgrade-all": "^0.5.4"
+  }
+}
