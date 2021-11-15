@@ -7,7 +7,7 @@ As far as I can tell, you cannot delete a menu item from existing application me
 
 So what could you do if you would like to delete an menu item or overwrite the `click` handling function? You need to build a new application menu from scratch. This project provide you with a template so that you can build an application menu quickly.
 
-The template returned should generate application menu identical to the default one provided by an Electron app.
+The template returned should generate application menu identical (almost) to the default one provided by an Electron app.
 
 
 ## Install
