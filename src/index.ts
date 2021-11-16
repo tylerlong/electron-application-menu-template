@@ -105,7 +105,7 @@ export const newTemplate = (): MenuItemConstructorOptions[] => {
         },
         {
           label: 'Zoom In',
-          accelerator: 'CmdOrCtrl++',
+          accelerator: 'CmdOrCtrl+Plus',
           role: 'zoomIn',
         },
         {
