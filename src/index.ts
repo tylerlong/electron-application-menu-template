@@ -148,6 +148,7 @@ export const newTemplate = (): MenuItemConstructorOptions[] => {
     {
       label: 'Help',
       role: 'help',
+      submenu: [],
     },
   ];
 
