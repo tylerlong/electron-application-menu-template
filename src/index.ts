@@ -137,6 +137,9 @@ export const newTemplate = (): MenuItemConstructorOptions[] => {
           role: 'zoom',
         },
         {
+          type: 'separator',
+        },
+        {
           label: 'Bring All to Front',
           role: 'front',
         },
