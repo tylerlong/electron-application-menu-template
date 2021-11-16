@@ -85,6 +85,11 @@ export const newTemplate = (): MenuItemConstructorOptions[] => {
           role: 'reload',
         },
         {
+          label: 'Force Reload',
+          accelerator: 'Shift+CmdOrCtrl+R',
+          role: 'forceReload',
+        },
+        {
           label: 'Toggle Developer Tools',
           accelerator:
             process.platform === 'darwin' ? 'Alt+Command+I' : 'Ctrl+Shift+I',
