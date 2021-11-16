@@ -58,6 +58,22 @@ export const newTemplate = (): MenuItemConstructorOptions[] => {
           accelerator: 'CmdOrCtrl+A',
           role: 'selectAll',
         },
+        {
+          type: 'separator',
+        },
+        {
+          label: 'Speech',
+          submenu: [
+            {
+              label: 'Start Speaking',
+              role: 'startSpeaking',
+            },
+            {
+              label: 'Stop Speaking',
+              role: 'stopSpeaking',
+            },
+          ],
+        },
       ],
     },
     {
