@@ -133,7 +133,8 @@ export const newTemplate = (): MenuItemConstructorOptions[] => {
           role: 'minimize',
         },
         {
-          type: 'separator',
+          label: 'Zoom',
+          role: 'zoom',
         },
         {
           label: 'Bring All to Front',
