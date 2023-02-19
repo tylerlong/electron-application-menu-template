@@ -62,6 +62,30 @@ export const newTemplate = (): MenuItemConstructorOptions[] => {
           type: 'separator',
         },
         {
+          label: 'Substitutions',
+          submenu: [
+            {
+              label: 'Show Substitutions',
+              role: 'showSubstitutions',
+            },
+            {
+              type: 'separator',
+            },
+            {
+              label: 'Smart Quotes',
+              role: 'toggleSmartQuotes',
+            },
+            {
+              label: 'Smart Dashes',
+              role: 'toggleSmartDashes',
+            },
+            {
+              label: 'Text Replacement',
+              role: 'toggleTextReplacement',
+            },
+          ],
+        },
+        {
           label: 'Speech',
           submenu: [
             {
