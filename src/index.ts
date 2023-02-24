@@ -7,120 +7,13 @@ export const newTemplate = (): MenuItemConstructorOptions[] => {
       role: 'fileMenu',
     },
     {
-      label: 'Edit',
-      submenu: [
-        {
-          role: 'undo',
-        },
-        {
-          role: 'redo',
-        },
-        {
-          type: 'separator',
-        },
-        {
-          role: 'cut',
-        },
-        {
-          role: 'copy',
-        },
-        {
-          role: 'paste',
-        },
-        {
-          role: 'pasteAndMatchStyle',
-        },
-        {
-          role: 'delete',
-        },
-        {
-          role: 'selectAll',
-        },
-        {
-          type: 'separator',
-        },
-        {
-          label: 'Substitutions',
-          submenu: [
-            {
-              role: 'showSubstitutions',
-            },
-            {
-              type: 'separator',
-            },
-            {
-              role: 'toggleSmartQuotes',
-            },
-            {
-              role: 'toggleSmartDashes',
-            },
-            {
-              role: 'toggleTextReplacement',
-            },
-          ],
-        },
-        {
-          label: 'Speech',
-          submenu: [
-            {
-              role: 'startSpeaking',
-            },
-            {
-              role: 'stopSpeaking',
-            },
-          ],
-        },
-      ],
+      role: 'editMenu',
     },
     {
-      label: 'View',
-      submenu: [
-        {
-          role: 'reload',
-        },
-        {
-          role: 'forceReload',
-        },
-        {
-          role: 'toggleDevTools',
-        },
-        {
-          type: 'separator',
-        },
-        {
-          role: 'resetZoom',
-        },
-        {
-          role: 'zoomIn',
-        },
-        {
-          role: 'zoomOut',
-        },
-        {
-          type: 'separator',
-        },
-        {
-          role: 'togglefullscreen',
-        },
-      ],
+      role: 'viewMenu',
     },
     {
-      label: 'Window',
-      role: 'window',
-      submenu: [
-        {
-          role: 'minimize',
-        },
-        {
-          role: 'zoom',
-        },
-        {
-          type: 'separator',
-        },
-        {
-          role: 'front',
-        },
-      ],
+      role: 'windowMenu',
     },
     {
       role: 'help',
