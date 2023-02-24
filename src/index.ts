@@ -1,19 +1,130 @@
 // eslint-disable-next-line node/no-unpublished-import
-import {app, MenuItemConstructorOptions} from 'electron';
+import {MenuItemConstructorOptions} from 'electron';
 
 export const newTemplate = (): MenuItemConstructorOptions[] => {
   const template: MenuItemConstructorOptions[] = [
     {
       role: 'fileMenu',
+      submenu: [
+        {
+          role: 'close',
+        },
+      ],
     },
     {
       role: 'editMenu',
+      submenu: [
+        {
+          role: 'undo',
+        },
+        {
+          role: 'redo',
+        },
+        {
+          type: 'separator',
+        },
+        {
+          role: 'cut',
+        },
+        {
+          role: 'copy',
+        },
+        {
+          role: 'paste',
+        },
+        {
+          role: 'pasteAndMatchStyle',
+        },
+        {
+          role: 'delete',
+        },
+        {
+          role: 'selectAll',
+        },
+        {
+          type: 'separator',
+        },
+        {
+          label: 'Substitutions',
+          submenu: [
+            {
+              role: 'showSubstitutions',
+            },
+            {
+              type: 'separator',
+            },
+            {
+              role: 'toggleSmartQuotes',
+            },
+            {
+              role: 'toggleSmartDashes',
+            },
+            {
+              role: 'toggleTextReplacement',
+            },
+          ],
+        },
+        {
+          label: 'Speech',
+          submenu: [
+            {
+              role: 'startSpeaking',
+            },
+            {
+              role: 'stopSpeaking',
+            },
+          ],
+        },
+      ],
     },
     {
       role: 'viewMenu',
+      submenu: [
+        {
+          role: 'reload',
+        },
+        {
+          role: 'forceReload',
+        },
+        {
+          role: 'toggleDevTools',
+        },
+        {
+          type: 'separator',
+        },
+        {
+          role: 'resetZoom',
+        },
+        {
+          role: 'zoomIn',
+        },
+        {
+          role: 'zoomOut',
+        },
+        {
+          type: 'separator',
+        },
+        {
+          role: 'togglefullscreen',
+        },
+      ],
     },
     {
       role: 'windowMenu',
+      submenu: [
+        {
+          role: 'minimize',
+        },
+        {
+          role: 'zoom',
+        },
+        {
+          type: 'separator',
+        },
+        {
+          role: 'front',
+        },
+      ],
     },
     {
       role: 'help',
@@ -21,9 +132,8 @@ export const newTemplate = (): MenuItemConstructorOptions[] => {
   ];
 
   if (process.platform === 'darwin') {
-    const {name} = app;
     template.unshift({
-      label: name,
+      role: 'appMenu',
       submenu: [
         {
           role: 'about',
