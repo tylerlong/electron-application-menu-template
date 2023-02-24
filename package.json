@@ -1,7 +1,7 @@
 {
   "name": "electron-application-menu-template",
   "description": "Electron Application Menu Template",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "license": "MIT",
   "repository": "github:tylerlong/electron-application-menu-template",
   "main": "build/index.js",
