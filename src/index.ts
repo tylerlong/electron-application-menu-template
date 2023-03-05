@@ -128,6 +128,7 @@ export const newTemplate = (): MenuItemConstructorOptions[] => {
     },
     {
       role: 'help',
+      submenu: [],
     },
   ];
 
